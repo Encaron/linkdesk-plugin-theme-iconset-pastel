@@ -12,16 +12,17 @@
 
 ## 来源与许可
 
-- **图标集**：https://github.com/material-extensions/vscode-material-icon-theme —— MIT 许可（本目录 `LICENSE.md` 附完整许可）。
+- **图标集**：https://github.com/material-extensions/vscode-material-icon-theme —— MIT 许可（上游许可正本随仓：`LICENSE-material-icon-theme.md`）。
 - **获取方式**：`npm pack material-icon-theme`（npm registry）→ `package/dist/material-icons.json`（VS Code iconTheme 格式）+ `package/icons/*.svg`。
-- **转换**：`scripts/convert-material-icons.mjs`（repo 内可复用）——按**语言生态精选清单**把 VS Code iconTheme 格式转成 LinkDesk 双形态 `imagePath` 格式（含 5 个顶层默认图标），只拷贝被引用的 SVG。升级 material 版本 = 重新 `npm pack` + 重跑转换（清单内缺失键静默跳过）。
+- **转换**：`convert-material-icons.mjs`——按**语言生态精选清单**把 VS Code iconTheme 格式转成 LinkDesk 双形态 `imagePath` 格式（含 5 个顶层默认图标），只拷贝被引用的 SVG。⚠️ **该脚本不在本仓**，它住在 LinkDesk 壳仓的 `scripts/` 下（本仓只保留它的产物）。升级 material 版本 = 重新 `npm pack` + 在壳仓重跑转换（清单内缺失键静默跳过）。
 
 ## 结构
 
 ```
 theme-iconset-pastel/
 ├── plugin.json          # contributes.iconThemes → icons/pastel.json
-├── LICENSE.md           # MIT（material-icon-theme）
+├── LICENSE              # 本插件的许可（MIT © Encaron）
+├── LICENSE-material-icon-theme.md   # 上游图标集的许可正本（MIT © Material Extensions，必须保留）
 ├── README.md
 └── icons/
     ├── pastel.json      # 精选 mappings（139 条 + 5 默认图标，纯 imagePath 形态）

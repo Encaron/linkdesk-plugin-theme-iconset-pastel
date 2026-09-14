@@ -1,4 +1,5 @@
 {
+  "$schema": "./node_modules/@linkdesk/plugin-sdk/schemas/icon-theme.schema.json",
   "file": {
     "imagePath": "icons/material/file.svg"
   },
