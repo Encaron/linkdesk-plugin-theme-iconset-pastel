@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <!-- theme-iconset-pastel 身份图「一套粉彩图标」：紫粉块 + 2×2 四枚粉彩瓦片（留缝成格）
+       意象 = 图标集 = 一格格彩色小图标；瓦片四色互不相同，正对「一套（多枚）」而非「一枚」
+       家族：40×40 圆角方载体 + 135° 双档渐变 + 白玻璃罩 + 发丝光边（Type-2 彩色身份图） -->
+  <defs>
+    <linearGradient id="pstBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8B7BF7"/>
+      <stop offset="1" stop-color="#C2426F"/>
+    </linearGradient>
+    <linearGradient id="pstSheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="40" height="40" rx="10" fill="url(#pstBg)"/>
+  <rect x="4" y="4" width="40" height="40" rx="10" fill="url(#pstSheen)"/>
+  <rect x="4.5" y="4.5" width="39" height="39" rx="9.5" fill="none" stroke="#F5D0FE" stroke-opacity="0.35"/>
+
+  <!-- 2×2 粉彩瓦片（12..36，缝 1.6px） -->
+  <g>
+    <rect x="12.2" y="12.2" width="11" height="11" rx="2.8" fill="#A7F3D0"/>
+    <rect x="24.8" y="12.2" width="11" height="11" rx="2.8" fill="#BAE6FD"/>
+    <rect x="12.2" y="24.8" width="11" height="11" rx="2.8" fill="#FBCFE8"/>
+    <rect x="24.8" y="24.8" width="11" height="11" rx="2.8" fill="#FEF3C7"/>
+  </g>
+  <!-- 瓦片上的一点折光（让四枚读作「有厚度的小图标」而非纯色块） -->
+  <g fill="#FFFFFF" opacity="0.5">
+    <rect x="14.4" y="14.4" width="6.6" height="1.6" rx="0.8"/>
+    <rect x="27" y="14.4" width="6.6" height="1.6" rx="0.8"/>
+    <rect x="14.4" y="27" width="6.6" height="1.6" rx="0.8"/>
+    <rect x="27" y="27" width="6.6" height="1.6" rx="0.8"/>
+  </g>
+</svg>
