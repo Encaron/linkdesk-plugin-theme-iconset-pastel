@@ -1,22 +1,28 @@
 {
   "version": "1",
-  "updatedAt": "2026-09-30T03:48:42.530Z",
+  "updatedAt": "2026-09-30T21:44:12.427Z",
   "plugins": [
     {
       "id": "theme-iconset-pastel",
       "name": "粉彩图标集",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "description": "精简彩色图标集——Material Icon Theme 常用精选（MIT，139 条映射 + 5 默认图标，含文件夹/新建文件/根文件夹彩色图标），图像资产形态应用（E5.8#133 图标主题闭环实例）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.0.5/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.0.6/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.0.5/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.5/theme-iconset-pastel.linkdesk-plugin",
-      "size": 55014,
-      "publishedAt": "2026-09-30T03:48:42.530Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.0.6/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.6/theme-iconset-pastel.linkdesk-plugin",
+      "size": 55233,
+      "publishedAt": "2026-09-30T21:44:12.427Z",
       "versions": [
+        {
+          "version": "1.0.6",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.6/theme-iconset-pastel.linkdesk-plugin",
+          "publishedAt": "2026-09-30T21:44:12.427Z",
+          "changelog": "- **图标主题显示名去双语化**：`contributes.iconThemes[].label` 由双语字面量「粉彩图标集 Pastel Icons」改为**纯中文**「粉彩图标集」——按「谁声明谁译文」正典，字面量只写源语言，英文译名住**本仓字典** `i18n/en.json`（该键原值 `Pastel Icon Set`，**键与值一字未改**）。\n- **触发**：壳侧 `app.iconTheme` 下拉打通显示面（从「只列原始 id」改为「id ＋ 显示名」，`label` 经 `enumDescriptions` 进设置页、由设置页 `t()` 解析）——`label` 从「零消费方」变成用户看得见的一行，双语字面量到此才会真的露到界面上。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` ^0.1.61 → **^0.1.66**——`contributes.iconThemes[].label` 从**豁免**改为**可渲染串**（显示面打通 ⇒ 同笔纳入），漏译由 `npm run verify` 第 ⑧ 段判红；本仓该条已住字典。\n- 零行为变化：图标数据 / 图标 id / 其余文案一字未动。"
+        },
         {
           "version": "1.0.5",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.5/theme-iconset-pastel.linkdesk-plugin",
@@ -44,8 +50,7 @@
         {
           "version": "1.0.1",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.1/theme-iconset-pastel.linkdesk-plugin",
-          "publishedAt": "2026-09-14T02:36:56.611Z",
-          "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 改指本仓 `node_modules/@linkdesk/plugin-sdk`（脱离壳仓后原相对路径指到仓外，编辑器补全/校验会失效）"
+          "publishedAt": "2026-09-14T02:36:56.611Z"
         }
       ]
     }
