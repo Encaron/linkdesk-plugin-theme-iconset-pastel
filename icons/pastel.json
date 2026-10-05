@@ -204,6 +204,372 @@
     },
     ".pdf": {
       "imagePath": "icons/material/pdf.svg"
+    },
+    ".exe": {
+      "imagePath": "icons/material/exe.svg"
+    },
+    ".msi": {
+      "imagePath": "icons/material/exe.svg"
+    },
+    ".dll": {
+      "imagePath": "icons/material/dll.svg"
+    },
+    ".so": {
+      "imagePath": "icons/material/dll.svg"
+    },
+    ".lib": {
+      "imagePath": "icons/material/lib.svg"
+    },
+    ".a": {
+      "imagePath": "icons/material/lib.svg"
+    },
+    ".o": {
+      "imagePath": "icons/material/lib.svg"
+    },
+    ".obj": {
+      "imagePath": "icons/material/lib.svg"
+    },
+    ".bin": {
+      "imagePath": "icons/material/hex.svg"
+    },
+    ".hex": {
+      "imagePath": "icons/material/hex.svg"
+    },
+    ".wasm": {
+      "imagePath": "icons/material/webassembly.svg"
+    },
+    ".jar": {
+      "imagePath": "icons/material/jar.svg"
+    },
+    ".class": {
+      "imagePath": "icons/material/javaclass.svg"
+    },
+    ".apk": {
+      "imagePath": "icons/material/android.svg"
+    },
+    ".deb": {
+      "imagePath": "icons/material/zip.svg"
+    },
+    ".rpm": {
+      "imagePath": "icons/material/zip.svg"
+    },
+    ".dmg": {
+      "imagePath": "icons/material/disc.svg"
+    },
+    ".iso": {
+      "imagePath": "icons/material/disc.svg"
+    },
+    ".img": {
+      "imagePath": "icons/material/image.svg"
+    },
+    ".dat": {
+      "imagePath": "icons/material/hex.svg"
+    },
+    ".vmdk": {
+      "imagePath": "icons/material/disc.svg"
+    },
+    ".lock": {
+      "imagePath": "icons/material/lock.svg"
+    },
+    ".zip": {
+      "imagePath": "icons/material/zip.svg"
+    },
+    ".rar": {
+      "imagePath": "icons/material/zip.svg"
+    },
+    ".7z": {
+      "imagePath": "icons/material/zip.svg"
+    },
+    ".tar": {
+      "imagePath": "icons/material/zip.svg"
+    },
+    ".gz": {
+      "imagePath": "icons/material/zip.svg"
+    },
+    ".bz2": {
+      "imagePath": "icons/material/zip.svg"
+    },
+    ".xz": {
+      "imagePath": "icons/material/zip.svg"
+    },
+    ".tgz": {
+      "imagePath": "icons/material/zip.svg"
+    },
+    ".zst": {
+      "imagePath": "icons/material/zip.svg"
+    },
+    ".cab": {
+      "imagePath": "icons/material/zip.svg"
+    },
+    ".docx": {
+      "imagePath": "icons/material/word.svg"
+    },
+    ".doc": {
+      "imagePath": "icons/material/word.svg"
+    },
+    ".xlsx": {
+      "imagePath": "icons/material/table.svg"
+    },
+    ".xls": {
+      "imagePath": "icons/material/table.svg"
+    },
+    ".pptx": {
+      "imagePath": "icons/material/powerpoint.svg"
+    },
+    ".ppt": {
+      "imagePath": "icons/material/powerpoint.svg"
+    },
+    ".odt": {
+      "imagePath": "icons/material/word.svg"
+    },
+    ".ods": {
+      "imagePath": "icons/material/table.svg"
+    },
+    ".odp": {
+      "imagePath": "icons/material/powerpoint.svg"
+    },
+    ".rtf": {
+      "imagePath": "icons/material/word.svg"
+    },
+    ".epub": {
+      "imagePath": "icons/material/epub.svg"
+    },
+    ".key": {
+      "imagePath": "icons/material/key.svg"
+    },
+    ".ttf": {
+      "imagePath": "icons/material/font.svg"
+    },
+    ".otf": {
+      "imagePath": "icons/material/font.svg"
+    },
+    ".woff": {
+      "imagePath": "icons/material/font.svg"
+    },
+    ".woff2": {
+      "imagePath": "icons/material/font.svg"
+    },
+    ".eot": {
+      "imagePath": "icons/material/font.svg"
+    },
+    ".bmp": {
+      "imagePath": "icons/material/image.svg"
+    },
+    ".tiff": {
+      "imagePath": "icons/material/image.svg"
+    },
+    ".psd": {
+      "imagePath": "icons/material/adobe-photoshop.svg"
+    },
+    ".ai": {
+      "imagePath": "icons/material/adobe-illustrator.svg"
+    },
+    ".fig": {
+      "imagePath": "icons/material/figma.svg"
+    },
+    ".sketch": {
+      "imagePath": "icons/material/sketch.svg"
+    },
+    ".mp3": {
+      "imagePath": "icons/material/audio.svg"
+    },
+    ".mp4": {
+      "imagePath": "icons/material/video.svg"
+    },
+    ".wav": {
+      "imagePath": "icons/material/audio.svg"
+    },
+    ".avi": {
+      "imagePath": "icons/material/video.svg"
+    },
+    ".mkv": {
+      "imagePath": "icons/material/video.svg"
+    },
+    ".mov": {
+      "imagePath": "icons/material/video.svg"
+    },
+    ".flac": {
+      "imagePath": "icons/material/audio.svg"
+    },
+    ".aac": {
+      "imagePath": "icons/material/audio.svg"
+    },
+    ".ogg": {
+      "imagePath": "icons/material/video.svg"
+    },
+    ".webm": {
+      "imagePath": "icons/material/video.svg"
+    },
+    ".m4a": {
+      "imagePath": "icons/material/audio.svg"
+    },
+    ".heic": {
+      "imagePath": "icons/material/image.svg"
+    },
+    ".avif": {
+      "imagePath": "icons/material/image.svg"
+    },
+    ".asm": {
+      "imagePath": "icons/material/assembly.svg"
+    },
+    ".s": {
+      "imagePath": "icons/material/assembly.svg"
+    },
+    ".sv": {
+      "imagePath": "icons/material/verilog.svg"
+    },
+    ".svh": {
+      "imagePath": "icons/material/verilog.svg"
+    },
+    ".vhd": {
+      "imagePath": "icons/material/verilog.svg"
+    },
+    ".vhdl": {
+      "imagePath": "icons/material/verilog.svg"
+    },
+    ".graphql": {
+      "imagePath": "icons/material/graphql.svg"
+    },
+    ".gql": {
+      "imagePath": "icons/material/graphql.svg"
+    },
+    ".prisma": {
+      "imagePath": "icons/material/prisma.svg"
+    },
+    ".proto": {
+      "imagePath": "icons/material/proto.svg"
+    },
+    ".ex": {
+      "imagePath": "icons/material/elixir.svg"
+    },
+    ".exs": {
+      "imagePath": "icons/material/elixir.svg"
+    },
+    ".erl": {
+      "imagePath": "icons/material/erlang.svg"
+    },
+    ".clj": {
+      "imagePath": "icons/material/clojure.svg"
+    },
+    ".cljs": {
+      "imagePath": "icons/material/clojure.svg"
+    },
+    ".hs": {
+      "imagePath": "icons/material/haskell.svg"
+    },
+    ".jl": {
+      "imagePath": "icons/material/julia.svg"
+    },
+    ".nix": {
+      "imagePath": "icons/material/nix.svg"
+    },
+    ".pl": {
+      "imagePath": "icons/material/prolog.svg"
+    },
+    ".pm": {
+      "imagePath": "icons/material/perl.svg"
+    },
+    ".hbs": {
+      "imagePath": "icons/material/handlebars.svg"
+    },
+    ".ejs": {
+      "imagePath": "icons/material/ejs.svg"
+    },
+    ".pug": {
+      "imagePath": "icons/material/pug.svg"
+    },
+    ".jade": {
+      "imagePath": "icons/material/pug.svg"
+    },
+    ".twig": {
+      "imagePath": "icons/material/twig.svg"
+    },
+    ".liquid": {
+      "imagePath": "icons/material/liquid.svg"
+    },
+    ".astro": {
+      "imagePath": "icons/material/astro.svg"
+    },
+    ".sol": {
+      "imagePath": "icons/material/solidity.svg"
+    },
+    ".zig": {
+      "imagePath": "icons/material/zig.svg"
+    },
+    ".nim": {
+      "imagePath": "icons/material/nim.svg"
+    },
+    ".groovy": {
+      "imagePath": "icons/material/groovy.svg"
+    },
+    ".gradle": {
+      "imagePath": "icons/material/gradle.svg"
+    },
+    ".fs": {
+      "imagePath": "icons/material/fsharp.svg"
+    },
+    ".fsx": {
+      "imagePath": "icons/material/fsharp.svg"
+    },
+    ".vb": {
+      "imagePath": "icons/material/visualstudio.svg"
+    },
+    ".vbs": {
+      "imagePath": "icons/material/visualstudio.svg"
+    },
+    ".lisp": {
+      "imagePath": "icons/material/lisp.svg"
+    },
+    ".scm": {
+      "imagePath": "icons/material/scheme.svg"
+    },
+    ".tcl": {
+      "imagePath": "icons/material/tcl.svg"
+    },
+    ".coffee": {
+      "imagePath": "icons/material/coffee.svg"
+    },
+    ".styl": {
+      "imagePath": "icons/material/stylus.svg"
+    },
+    ".ipynb": {
+      "imagePath": "icons/material/jupyter.svg"
+    },
+    ".sqlite": {
+      "imagePath": "icons/material/database.svg"
+    },
+    ".sqlite3": {
+      "imagePath": "icons/material/database.svg"
+    },
+    ".db": {
+      "imagePath": "icons/material/database.svg"
+    },
+    ".mdb": {
+      "imagePath": "icons/material/database.svg"
+    },
+    ".parquet": {
+      "imagePath": "icons/material/database.svg"
+    },
+    ".pkl": {
+      "imagePath": "icons/material/pkl.svg"
+    },
+    ".tf": {
+      "imagePath": "icons/material/terraform.svg"
+    },
+    ".hcl": {
+      "imagePath": "icons/material/hcl.svg"
+    },
+    ".uvproj": {
+      "imagePath": "icons/material/uvprojx.svg"
+    },
+    ".uvprojx": {
+      "imagePath": "icons/material/uvprojx.svg"
+    },
+    ".uvopt": {
+      "imagePath": "icons/material/uvprojx.svg"
+    },
+    ".uvoptx": {
+      "imagePath": "icons/material/uvprojx.svg"
     }
   },
   "files": {
@@ -283,6 +649,132 @@
       "imagePath": "icons/material/license.svg"
     },
     "license.md": {
+      "imagePath": "icons/material/license.svg"
+    },
+    "meson.build": {
+      "imagePath": "icons/material/meson.svg"
+    },
+    "justfile": {
+      "imagePath": "icons/material/just.svg"
+    },
+    "gradle.properties": {
+      "imagePath": "icons/material/gradle.svg"
+    },
+    ".clangd": {
+      "imagePath": "icons/material/clangd.svg"
+    },
+    "jest.config.js": {
+      "imagePath": "icons/material/jest.svg"
+    },
+    "vitest.config.ts": {
+      "imagePath": "icons/material/vitest.svg"
+    },
+    "angular.json": {
+      "imagePath": "icons/material/angular.svg"
+    },
+    "nuxt.config.js": {
+      "imagePath": "icons/material/nuxt.svg"
+    },
+    "svelte.config.js": {
+      "imagePath": "icons/material/svelte.svg"
+    },
+    ".prettierrc": {
+      "imagePath": "icons/material/prettier.svg"
+    },
+    ".eslintrc": {
+      "imagePath": "icons/material/eslint.svg"
+    },
+    ".eslintignore": {
+      "imagePath": "icons/material/eslint.svg"
+    },
+    ".babelrc": {
+      "imagePath": "icons/material/babel.svg"
+    },
+    ".nvmrc": {
+      "imagePath": "icons/material/nodejs.svg"
+    },
+    ".node-version": {
+      "imagePath": "icons/material/nodejs.svg"
+    },
+    ".python-version": {
+      "imagePath": "icons/material/python-misc.svg"
+    },
+    ".ruby-version": {
+      "imagePath": "icons/material/ruby.svg"
+    },
+    "pnpm-lock.yaml": {
+      "imagePath": "icons/material/pnpm.svg"
+    },
+    "yarn.lock": {
+      "imagePath": "icons/material/yarn.svg"
+    },
+    "pipfile": {
+      "imagePath": "icons/material/python-misc.svg"
+    },
+    "poetry.lock": {
+      "imagePath": "icons/material/poetry.svg"
+    },
+    "gemfile": {
+      "imagePath": "icons/material/gemfile.svg"
+    },
+    "rakefile": {
+      "imagePath": "icons/material/ruby.svg"
+    },
+    ".npmignore": {
+      "imagePath": "icons/material/npm.svg"
+    },
+    ".yarnrc": {
+      "imagePath": "icons/material/yarn.svg"
+    },
+    ".gitmodules": {
+      "imagePath": "icons/material/git.svg"
+    },
+    "jenkinsfile": {
+      "imagePath": "icons/material/jenkins.svg"
+    },
+    ".travis.yml": {
+      "imagePath": "icons/material/travis.svg"
+    },
+    ".bazelrc": {
+      "imagePath": "icons/material/bazel.svg"
+    },
+    ".htaccess": {
+      "imagePath": "icons/material/xml.svg"
+    },
+    "robots.txt": {
+      "imagePath": "icons/material/robots.svg"
+    },
+    "favicon.ico": {
+      "imagePath": "icons/material/favicon.svg"
+    },
+    ".env.development": {
+      "imagePath": "icons/material/tune.svg"
+    },
+    ".env.production": {
+      "imagePath": "icons/material/tune.svg"
+    },
+    "readme": {
+      "imagePath": "icons/material/readme.svg"
+    },
+    "changelog": {
+      "imagePath": "icons/material/changelog.svg"
+    },
+    "contributing.md": {
+      "imagePath": "icons/material/contributing.svg"
+    },
+    "todo.md": {
+      "imagePath": "icons/material/todo.svg"
+    },
+    "authors": {
+      "imagePath": "icons/material/authors.svg"
+    },
+    "security.md": {
+      "imagePath": "icons/material/lock.svg"
+    },
+    "code_of_conduct.md": {
+      "imagePath": "icons/material/conduct.svg"
+    },
+    "license.txt": {
       "imagePath": "icons/material/license.svg"
     }
   },

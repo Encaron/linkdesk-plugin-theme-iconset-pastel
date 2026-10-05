@@ -1,11 +1,11 @@
 # 粉彩图标集（theme-iconset-pastel）——LinkDesk 插件仓
 
 > **本文件是给在这个仓里干活的 AI 看的**（Claude Code / Codex / Cursor / …）。人看 `README.md`。
-> 插件身份的唯一来源 = `plugin.json` 顶层的 `pluginId`（本仓：`theme-iconset-pastel`）。当前版本 `1.0.6`。
+> 插件身份的唯一来源 = `plugin.json` 顶层的 `pluginId`（本仓：`theme-iconset-pastel`）。当前版本 `1.1.0`。
 
 ## 1. 这是什么
 
-粉彩图标集——139 条文件 / 文件夹图标映射，从 Material Icon Theme 精选（MIT）。
+粉彩图标集——303 条文件 / 文件夹图标映射，从 Material Icon Theme 精选（MIT）。
 
 **用户在哪看到它**：外观主题：在设置 → 外观里切换（**文件图标**那一档，不是配色主题）。
 
@@ -25,15 +25,18 @@
 
 ## 3. 本仓的结构与关键路径
 
-映射表在 `icons/pastel.json`，99 个 SVG 在 `icons/material/`（**图片资产形态**，走 `imagePath`）。
+映射表在 `icons/pastel.json`，180 个 SVG 在 `icons/material/`（**图片资产形态**，走 `imagePath`）。
 这是**全仓唯一走 `contributes.iconThemes`** 的插件。
 
 **本仓没有 `src/`** —— 它是「数据插件」：能力全在 `plugin.json` 的声明 ＋ 数据文件里。
 
 
 - README 的「来源与许可」写着一个转换脚本 `scripts/convert-material-icons.mjs` —— **它不在本仓**（在壳仓 `scripts/`）。
-- 本仓有 `LICENSE.md`（全仓唯一带许可证文件的）——与上游 MIT 对齐，别删。
-- 本仓**没有 `resources/`**、`plugin.json` 里**没有 `icon`**。
+- 本仓有 `LICENSE`（MIT © Encaron）——与上游 MIT 对齐，别删。
+- **`icons/material/uvprojx.svg` 是全仓唯一非上游资产**（Keil μVision 单片机组图标，本仓自绘）——
+  ⛔ 别当「上游没引用的残留」清掉；它由映射 `.uvprojx`/`.uvproj`/`.uvopt`/`.uvoptx` 引用，
+  转换脚本的 `LOCAL_EXTENSIONS` 认得它（重跑脚本既不会拷它、也不会报它缺失）。
+- 有 `resources/icon.svg`（市场身份图，`plugin.json` 的 `icon` 字段指向它）。
 
 ## 4. 规矩去哪找
 

@@ -1,5 +1,22 @@
 # 更新日志
 
+## v1.1.0（2026-10-05）
+
+- **图标覆盖大扩档**：原精选偏「语言生态」，Windows 桌面与嵌入式的日常文件一概命中不了（`.exe` / `.docx` / 压缩包 / 工程配置全落回默认文件图标）。本次从上游 material-icon-theme 扩到 **303 条映射 / 180 个彩色 SVG**（原 139 条 / 99 个），新增 **122 个扩展名 + 42 个文件名**：
+  - **可执行与二进制**：`.exe` `.msi` `.dll` `.so` `.lib` `.a` `.o` `.obj` `.bin` `.hex` `.wasm` `.jar` `.class` `.apk` `.iso` `.deb` `.rpm` `.dmg` `.vmdk`…
+  - **Office 与电子书**：`.docx` `.doc` `.xlsx` `.xls` `.pptx` `.ppt` `.odt` `.ods` `.odp` `.rtf` `.epub`（`.xlsx` 走上游 `table` 图标、`.pptx` 走 `powerpoint`）
+  - **压缩包**：`.zip` `.rar` `.7z` `.tar` `.gz` `.bz2` `.xz` `.tgz` `.zst` `.cab`
+  - **字体与媒体**：`.ttf` `.otf` `.woff` `.woff2` `.eot`、`.psd` `.ai` `.fig` `.sketch`、`.mp3` `.mp4` `.wav` `.avi` `.mkv` `.mov` `.flac` `.heic` `.avif`…
+  - **语言扩充**：汇编 `.asm`/`.s`、Verilog `.sv`/`.svh`/`.vhd`/`.vhdl`、GraphQL、Proto、Prisma、Elixir、Erlang、Clojure、Haskell、Julia、Nix、Perl、Pug/EJS/Handlebars/Twig、Astro、Solidity、Zig、Nim、Groovy、F#、VB、Lisp、Tcl、CoffeeScript…
+  - **数据**：`.ipynb`（Jupyter）、`.sqlite` `.db` `.mdb`、`.parquet` `.pkl`、`.tf`/`.hcl`（Terraform）
+  - **工程配置（按文件名）**：`.prettierrc` `.eslintrc` `.babelrc` `.clangd` `.nvmrc` `yarn.lock` `pnpm-lock.yaml` `Gemfile` `Rakefile` `Justfile` `Jenkinsfile` `.travis.yml` `.bazelrc` `favicon.ico` `robots.txt` `.gitmodules` `.htaccess`…
+  - **文档（按文件名）**：无扩展名的 `README` / `CHANGELOG`、`CONTRIBUTING.md`、`TODO.md`、`AUTHORS`、`SECURITY.md`、`CODE_OF_CONDUCT.md`、`LICENSE.txt`
+- **新增一枚本仓自绘图标** `icons/material/uvprojx.svg`（**全仓唯一非上游资产**，MIT © Encaron）——给 Keil μVision 的 `.uvprojx`/`.uvproj`/`.uvopt`/`.uvoptx`。**上游两个主流图标包都没有 Keil 图标**：material-icon-theme 5.39.0 与 vscode-icons 都在 GitHub 上逐条查过、零命中（vscode-icons 那个 `file_type_uv` 是 Python 的 uv 包管理器，与本主题无关）⇒ 按 material 的扁平风格自绘一枚单片机图标（绿芯 + 12 引脚），不涉第三方商标资产。
+- **两条本地改指**（住转换脚本 `EXTENSION_OVERRIDES`，每条随码注明理由）：`.o`/`.obj` 上游归给 `3d`（那是给 Wavefront 3D 模型的）——工程语境里它们是编译目标文件，改指 `lib`（跟着 `.a`/`.lib` 走「库 / 目标文件」）。
+- **一条不收**：`.v` —— 上游归给 V 语言，而嵌入式的 `.v` 常是 Verilog，两个解释都成立 ⇒ 不收，宁可回退默认文件图标（`.sv`/`.svh`/`.vhd`/`.vhdl` 照收）。
+- **不动的东西**：图标主题 id、显示名（`label`/`name`）、配色、上游 SVG 资产本身——原有 139 条映射**一字未改，只增不改**；老用户升级后看到的图标只会**变多**，不会变样。
+- 壳仓侧同笔更新转换脚本 `scripts/convert-material-icons.mjs`（清单扩充 ＋ `EXTENSION_OVERRIDES` ＋ `LOCAL_EXTENSIONS`）；该脚本住壳仓，本仓只留产物。
+
 ## v1.0.6（2026-10-01）
 
 - **图标主题显示名去双语化**：`contributes.iconThemes[].label` 由双语字面量「粉彩图标集 Pastel Icons」改为**纯中文**「粉彩图标集」——按「谁声明谁译文」正典，字面量只写源语言，英文译名住**本仓字典** `i18n/en.json`（该键原值 `Pastel Icon Set`，**键与值一字未改**）。
