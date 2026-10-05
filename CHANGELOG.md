@@ -1,5 +1,12 @@
 # 更新日志
 
+## v1.1.1（2026-10-06）
+
+- **图标清单的「图纸」搬回本仓（自足性收口）**：转换 material 图标集的那只脚本原先住在 LinkDesk 壳仓（`scripts/convert-material-icons.mjs`），本仓只留产物 ⇒ 换人／换机想加一批图标，得先去壳仓改那只脚本（而壳仓不是作者的仓）。现在同一件事由 **`@linkdesk/plugin-sdk` 的 `import-icon-theme` 命令**做（公开 npm，**任何图标主题作者可用**），而**本主题「选哪些图标」的编辑决定**住本仓 **`icon-import.json`**（三张表 ＋ 两条改指 ＋ 自绘资产白名单）。
+  - 重跑（例如升上游 material-icon-theme）：`npm pack material-icon-theme` → 解包 → `npm run icons:import -- package/dist/material-icons.json`。本次实测：产物与现 `icons/pastel.json` **逐字节一致**（303 条映射 / 180 个 SVG 全部对上）。
+  - `package.json` 的 devDep `@linkdesk/plugin-sdk` 随之抬到 `^0.1.84`（`import-icon-theme` 自该版起可用）；壳仓侧同笔撤掉 `icons:convert` 入口与那只脚本——**⛔ 不再有「图纸住壳仓」这回事**。
+- **功能零变更**：图标、映射、配色、id、显示名一律未动——升级后看到的图标与 v1.1.0 完全一样（本次只动工具链与说明）。
+
 ## v1.1.0（2026-10-05）
 
 - **图标覆盖大扩档**：原精选偏「语言生态」，Windows 桌面与嵌入式的日常文件一概命中不了（`.exe` / `.docx` / 压缩包 / 工程配置全落回默认文件图标）。本次从上游 material-icon-theme 扩到 **303 条映射 / 180 个彩色 SVG**（原 139 条 / 99 个），新增 **122 个扩展名 + 42 个文件名**：

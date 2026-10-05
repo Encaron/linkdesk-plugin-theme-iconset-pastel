@@ -14,9 +14,10 @@
 
 - **图标集**：https://github.com/material-extensions/vscode-material-icon-theme —— MIT 许可（上游许可正本随仓：`LICENSE-material-icon-theme.md`）。
 - **获取方式**：`npm pack material-icon-theme`（npm registry）→ `package/dist/material-icons.json`（VS Code iconTheme 格式）+ `package/icons/*.svg`。
-- **转换**：`convert-material-icons.mjs`——按**分类精选清单**把 VS Code iconTheme 格式转成 LinkDesk 双形态 `imagePath` 格式（含 5 个顶层默认图标），只拷贝被引用的 SVG。⚠️ **该脚本不在本仓**，它住在 LinkDesk 壳仓的 `scripts/` 下（本仓只保留它的产物）。升级 material 版本 = 重新 `npm pack` + 在壳仓重跑转换（清单内缺失键静默跳过）。
+- **转换**：`npm run icons:import -- <上游 package/dist/material-icons.json>`（＝ `linkdesk-plugin-sdk import-icon-theme`，随公开 npm 包 `@linkdesk/plugin-sdk` 装——任何图标主题作者都能用同一条命令）——按**分类精选清单**把 VS Code iconTheme 格式转成 LinkDesk 双形态 `imagePath` 格式（含 5 个顶层默认图标），只拷贝被引用的 SVG。
+  - 🔴 **本主题「选哪些图标」的编辑决定住本仓 `icon-import.json`**（三张表 ＋ 两条本地改指 ＋ 自绘资产白名单）⇒ 加图标**不必碰任何别的仓**：`npm pack material-icon-theme` → 解包 → 上面那条命令（清单内缺失键静默跳过：映射保留、运行时走保底图标）。
 - **⚠️ 唯一非上游资产**：`icons/material/uvprojx.svg` —— Keil μVision 工程图标（`.uvprojx`/`.uvproj`/`.uvopt`/`.uvoptx`），**本仓自绘**（MIT © Encaron，随本插件 `LICENSE`）。上游两个主流图标包都没有 Keil 图标（material-icon-theme 与 vscode-icons 均零命中）⇒ 按 material 的扁平风格自绘，不涉第三方商标资产。
-- **两条本地改指**（转换脚本 `EXTENSION_OVERRIDES`，理由随码注明）：`.o`/`.obj` 上游归给 `3d`（3D 模型），本仓改指 `lib`（编译目标文件）。**一条不收**：`.v`——上游归给 V 语言，嵌入式那边常是 Verilog，两个解释都成立 ⇒ 不收，回退默认图标。
+- **两条本地改指**（住 `icon-import.json` 的 `overrides`，理由随清单注明）：`.o`/`.obj` 上游归给 `3d`（3D 模型），本仓改指 `lib`（编译目标文件）。**一条不收**：`.v`——上游归给 V 语言，嵌入式那边常是 Verilog，两个解释都成立 ⇒ 不收，回退默认图标。
 
 ## 结构
 
@@ -26,6 +27,7 @@ theme-iconset-pastel/
 ├── LICENSE              # 本插件的许可（MIT © Encaron）
 ├── LICENSE-material-icon-theme.md   # 上游图标集的许可正本（MIT © Material Extensions，必须保留）
 ├── README.md
+├── icon-import.json     # 🔴 本仓的**编辑决定**——选哪些扩展名/文件名/文件夹名、两条改指、自绘资产白名单（重跑转换时由 --list 读入）
 └── icons/
     ├── pastel.json      # 精选 mappings（303 条 + 5 默认图标，纯 imagePath 形态）
     └── material/        # 彩色 SVG 资产（180 个，仅被引用）

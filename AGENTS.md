@@ -1,7 +1,7 @@
 # 粉彩图标集（theme-iconset-pastel）——LinkDesk 插件仓
 
 > **本文件是给在这个仓里干活的 AI 看的**（Claude Code / Codex / Cursor / …）。人看 `README.md`。
-> 插件身份的唯一来源 = `plugin.json` 顶层的 `pluginId`（本仓：`theme-iconset-pastel`）。当前版本 `1.1.0`。
+> 插件身份的唯一来源 = `plugin.json` 顶层的 `pluginId`（本仓：`theme-iconset-pastel`）。当前版本 `1.1.1`。
 
 ## 1. 这是什么
 
@@ -26,16 +26,20 @@
 ## 3. 本仓的结构与关键路径
 
 映射表在 `icons/pastel.json`，180 个 SVG 在 `icons/material/`（**图片资产形态**，走 `imagePath`）。
+导入清单在 `icon-import.json`（收哪些扩展名 / 文件名 / 文件夹、哪些改指、哪些是自绘资产——
+**本主题的编辑决定全在这一份里**）。
 这是**全仓唯一走 `contributes.iconThemes`** 的插件。
 
 **本仓没有 `src/`** —— 它是「数据插件」：能力全在 `plugin.json` 的声明 ＋ 数据文件里。
 
 
-- README 的「来源与许可」写着一个转换脚本 `scripts/convert-material-icons.mjs` —— **它不在本仓**（在壳仓 `scripts/`）。
+- 产物由 **SDK 命令**生成：`npx @linkdesk/plugin-sdk import-icon-theme <上游 iconTheme.json> --name material
+  --out icons/pastel.json --assets icons/material --list icon-import.json`（2026-10-06 起随 `@linkdesk/plugin-sdk` 发）。
+  ⛔ 壳仓那只一次性脚本 `scripts/convert-material-icons.mjs` **已删**——编辑决定住本仓清单，重跑与仓内产物逐字节相同。
 - 本仓有 `LICENSE`（MIT © Encaron）——与上游 MIT 对齐，别删。
 - **`icons/material/uvprojx.svg` 是全仓唯一非上游资产**（Keil μVision 单片机组图标，本仓自绘）——
   ⛔ 别当「上游没引用的残留」清掉；它由映射 `.uvprojx`/`.uvproj`/`.uvopt`/`.uvoptx` 引用，
-  转换脚本的 `LOCAL_EXTENSIONS` 认得它（重跑脚本既不会拷它、也不会报它缺失）。
+  清单 `icon-import.json` 的 `localIcons` 认得它（重跑命令既不会拷它、也不会报它缺失）。
 - 有 `resources/icon.svg`（市场身份图，`plugin.json` 的 `icon` 字段指向它）。
 
 ## 4. 规矩去哪找
@@ -54,6 +58,7 @@ npm run validate   # 校验 plugin.json / 主题配方 / 声明的字典文件�
 npm run lint       # SDK 规则腿（硬编码颜色 / 字号 / 4px 网格 / 自定义 eslint 规则）——**只报告、不拦**
 npm run publish    # 发版到本仓自己的 GitHub Release（**上架两步里的第一步**）
 npm run verify     # 🔴 **交付前严格腿** = 本仓 CI 跑的那条（lint 判红 + 跨插件 import + 字典完整性 + 声明自洽）
+npm run icons:import# （见 package.json）
 ```
 
 ## 6. 发布与版本纪律
