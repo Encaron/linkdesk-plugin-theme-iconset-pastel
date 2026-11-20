@@ -1,5 +1,9 @@
 # 更新日志
 
+## v1.1.2（2026-11-20）
+
+- **分类声明（R4-2.8/2.9）**：`plugin.json` 顶层补 `category: "themes"` ＋ `categories: ["icon-pack"]`——商店分类抽屉归位，随本次发版进入官方目录条目。
+
 ## v1.1.1（2026-10-06）
 
 - **图标清单的「图纸」搬回本仓（自足性收口）**：转换 material 图标集的那只脚本原先住在 LinkDesk 壳仓（`scripts/convert-material-icons.mjs`），本仓只留产物 ⇒ 换人／换机想加一批图标，得先去壳仓改那只脚本（而壳仓不是作者的仓）。现在同一件事由 **`@linkdesk/plugin-sdk` 的 `import-icon-theme` 命令**做（公开 npm，**任何图标主题作者可用**），而**本主题「选哪些图标」的编辑决定**住本仓 **`icon-import.json`**（三张表 ＋ 两条改指 ＋ 自绘资产白名单）。
