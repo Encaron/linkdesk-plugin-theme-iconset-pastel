@@ -1,26 +1,36 @@
 {
   "version": "1",
-  "updatedAt": "2026-11-20T11:54:15.546Z",
+  "updatedAt": "2026-11-23T16:42:30.069Z",
   "plugins": [
     {
       "id": "theme-iconset-pastel",
       "name": "粉彩图标集",
-      "version": "1.1.2",
+      "version": "1.1.3",
       "description": "精简彩色图标集——Material Icon Theme 常用精选（MIT，303 条映射 + 5 默认图标，含文件夹/新建文件/根文件夹彩色图标与自绘的 Keil 单片机工程图标），图像资产形态应用（E5.8#133 图标主题闭环实例）",
       "author": {
-        "name": "LinkDesk"
+        "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.2/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.3/resources/icon.svg",
       "iconSource": "url",
       "category": "themes",
       "categories": [
         "icon-pack"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.2/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.1.2/theme-iconset-pastel.linkdesk-plugin",
-      "size": 112810,
-      "publishedAt": "2026-11-20T11:54:15.546Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.3/README.md",
+      "readmeLocales": {
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.3/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.3/docs/readme/en.md"
+      },
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.1.3/theme-iconset-pastel.linkdesk-plugin",
+      "size": 113530,
+      "publishedAt": "2026-11-23T16:42:30.069Z",
       "versions": [
+        {
+          "version": "1.1.3",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.1.3/theme-iconset-pastel.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:42:30.069Z",
+          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
+        },
         {
           "version": "1.1.2",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.1.2/theme-iconset-pastel.linkdesk-plugin",
@@ -48,8 +58,7 @@
         {
           "version": "1.0.5",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.5/theme-iconset-pastel.linkdesk-plugin",
-          "publishedAt": "2026-09-30T03:48:42.530Z",
-          "changelog": "- **自有翻译归位（E6#161「谁的仓谁译文」）**：本仓 2 条可渲染文案的英文译名住进**本仓字典** `i18n/en.json`（新增 2 条） ＋ `contributes.i18n` 声明——不再依赖 `lang-defaults` 代管：文案在本仓声明、译名却在别的仓的字典里，本仓加一条声明那只仓无从跟上（跨仓追不上）。译名取值：池里现成的照抄（同键同值 ⇒ 按 E6#161「同值覆盖不出声」规则运行时零变化），池里没有的 2 条新写。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` ^0.1.19 → **^0.1.61**——`npm run verify` 第 ⑧ 段「自有字典覆盖度」（manifest 渲染串缺口 🔴 / 源码 `t()` 缺口 ⚠️）由 `@linkdesk/plugin-sdk/own-dict-coverage` 判定（判据本体在 SDK，⛔ 不在本仓复制）。"
+          "publishedAt": "2026-09-30T03:48:42.530Z"
         },
         {
           "version": "1.0.4",
